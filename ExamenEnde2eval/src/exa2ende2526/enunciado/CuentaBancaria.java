@@ -4,6 +4,7 @@ public abstract class CuentaBancaria {
 
     protected String titular;
     protected double saldo;
+    
 
     public CuentaBancaria(String titular, double saldoInicial) {
         if (saldoInicial < 0) {
@@ -21,14 +22,21 @@ public abstract class CuentaBancaria {
         return saldo;
     }
 
-    public void ingresar(double cantidad) {
+    public void ingresar(double cantidad) throws Exception{
 
         saldo += cantidad;
+        
+        if (cantidad > 0) {
+			throw new Exception("La cantidad no puede ser negativa");
+		}
     }
 
-    public void reintegrar(double cantidad) {
+    public void reintegrar(double cantidad) throws  Exception{
 
         saldo -= cantidad;
+        if (cantidad > 0 && saldo>cantidad) {
+			throw new Exception("La cantidad no puede ser negativa ni superior al saldo");
+		}
     }
 
 }
