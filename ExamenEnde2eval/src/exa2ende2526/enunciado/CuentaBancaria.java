@@ -29,23 +29,23 @@ public abstract class CuentaBancaria {
         this.titular = titular;
         this.saldo = saldoInicial;
     }
-<<<<<<< HEAD
+
     /**
      * Método que calcula los intereses de una cuenta bancaria
      * @param saldo es el saldo que posee la cuenta bancaria
      * @return devuelve el interés calculado
      * @throws lanza una excepción, aún no implementada
      */
-    public abstract double calcularInteres(double saldo) throws Exception;
+    public abstract double calcularInteres1(double saldo) throws Exception;
     /**
      * Método para obtener el nombre del titular de la cuenta
      * @return devuelve el nombre del titular
      */
-=======
+
     
     public abstract double calcularInteres(double saldo) throws Exception;
     
->>>>>>> refs/heads/CA
+
     public String getTitular() {
         return titular;
     }
