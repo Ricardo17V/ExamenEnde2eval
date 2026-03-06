@@ -29,7 +29,7 @@ public abstract class CuentaBancaria {
         this.titular = titular;
         this.saldo = saldoInicial;
     }
-    public abstract double calcularInteres(double saldo) throws Exception;
+    public abstract double calcularInteres1(double saldo) throws Exception;
 
     /**
      * Método que calcula los intereses de una cuenta bancaria
@@ -37,7 +37,7 @@ public abstract class CuentaBancaria {
      * @return devuelve el interés calculado
      * @throws lanza una excepción, aún no implementada
      */
-    public abstract double calcularInteres1(double saldo) throws Exception;
+    public abstract double calcularInteres11(double saldo) throws Exception;
     /**
      * Método para obtener el nombre del titular de la cuenta
      * @return devuelve el nombre del titular

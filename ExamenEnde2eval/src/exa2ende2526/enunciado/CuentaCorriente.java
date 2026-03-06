@@ -35,5 +35,15 @@ private double interes;
 		interes = comision;
 		return interes;
 	}
+	@Override
+	public double calcularInteres1(double saldo) throws Exception {
+		
+		return 0;
+	}
+	@Override
+	public double calcularInteres11(double saldo) throws Exception {
+		
+		return 0;
+	}
 
 }
