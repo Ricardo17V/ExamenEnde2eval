@@ -35,5 +35,15 @@ public class CuentaAhorro extends CuentaBancaria{
 		double interes = saldo * tasaInteres;
 		return interes;
 	}
+	@Override
+	public double calcularInteres1(double saldo) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public double calcularInteres11(double saldo) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }
