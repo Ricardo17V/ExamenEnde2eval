@@ -12,7 +12,9 @@ public abstract class CuentaBancaria {
         this.titular = titular;
         this.saldo = saldoInicial;
     }
-
+    
+    public abstract double calcularInteres(double saldo) throws Exception;
+    
     public String getTitular() {
         return titular;
     }
@@ -30,5 +32,6 @@ public abstract class CuentaBancaria {
 
         saldo -= cantidad;
     }
-
+    
+    
 }
